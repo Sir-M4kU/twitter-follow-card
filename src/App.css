@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  background: #333;
+  color: #eee;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.follow-card {
+  width: 600px;
+  margin: 10px 0;
+  background: #111;
+  border-radius: 6px;
+}
+
+.follow-card > h2 {
+  padding: 6px 0;
+  margin: 0 14px;
+}
+
+.follow-more {
+  width: 100%;
+  padding: 14px 10px;
+  border-radius: 0 0 6px 0;
+  transition: 0.3s;
+}
+
+.follow-more a {
+  color: #0cf;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.follow-more:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.user-card {
+  padding: 8px 12px;
+  display: flex;
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.user-data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-img {
+  width: 70px;
+  padding-right: 8px;
+  border-radius: 50%;
+  height: auto;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.user-username {
+  color: #666;
+}
+
+.user-follow {
+  color: #111;
+  padding: 6px 16px;
+  text-align: center;
+  border-radius: 45px;
+  background: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.user-follow:hover {
+  opacity: .8;
+}
+
+.is-following {
+  width: 150px;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+.user-follow.is-following:hover {
+  background: rgba(255, 0, 0, 0.2);
+  color: #e91414;
+  border: 1px solid #e91414;
+}
+
+.user-follow.is-following:hover .user-stop-follow {
+  display: block;
+}
+
+.user-follow.is-following:hover .user-follow-text {
+  display: none;
+}
+
+.user-stop-follow {
+  display: none;
+}
