@@ -14,7 +14,12 @@ export default function App () {
         <UserCard
           name='猫又おかゆ🍙'
           userName='nekomataokayu'
-          img='https://pbs.twimg.com/profile_images/1628383781492260866/u3yPJleX_400x400.jpg'
+          img='https://pbs.twimg.com/profile_images/1658939396371128321/N7_42B-d_400x400.jpg'
+        />
+        <UserCard
+          name='anny 🌟🦊'
+          userName='annytf'
+          img='https://pbs.twimg.com/profile_images/1597548206443098112/vR4JnZF5_400x400.jpg'
         />
         <div className='follow-more'>
           <a href='#'>Ver mas</a>
